@@ -17,11 +17,22 @@ android {
         }
     }
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
+       release {
+           minifyEnabled false
+           proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+           signingConfig signingConfigs.release
+       }
+   }
+   signingConfigs {
+       release {
+           if (System.getenv()["CI"]) { // CI=true lo exporta Codemagic automáticamente
+               storeFile file(System.getenv()["CM_KEYSTORE_PATH"])
+               storePassword System.getenv()["CM_KEYSTORE_PASSWORD"]
+               keyAlias System.getenv()["CM_KEY_ALIAS"]
+               keyPassword System.getenv()["CM_KEY_PASSWORD"]
+           }
+       }
+   }
 }
 
 repositories {
