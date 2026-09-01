@@ -9,7 +9,7 @@ workflows:
         # subir tu .keystore en el paso 3 de arriba.
         - codemagic_keystore
       vars:
-        PACKAGE_NAME: "com.tuempresa.miappodk"  # el mismo appId de capacitor.config.json
+        PACKAGE_NAME: "com.mrbot.tkena"  # el mismo appId de capacitor.config.json
       node: latest
     scripts:
       - name: Set up local.properties
