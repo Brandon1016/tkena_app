@@ -1,0 +1,125 @@
+/* Tables */
+
+/* --- Table --- */
+
+.table-wrapper {
+    width: 100%;
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-1);
+}
+
+.table-container {
+    overflow-x: auto;
+
+    background: var(--bg-surface);
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    width: 100%;
+    box-shadow: var(--shadow-lg);
+}
+
+.table {
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 100%;
+    text-align: left;
+}
+
+.table-empty {
+    text-align: center;
+    padding: var(--space-8);
+}
+
+.table-empty-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+
+    color: var(--text-muted);
+}
+
+.table-head {
+    background: var(--bg-table-header);
+}
+
+.table-head th {
+    /*padding: var(--space-3) var(--space-4);*/
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+
+    color: var(--text-table-head);
+    text-transform: uppercase;
+
+    border-bottom: 2px solid var(--border-color);
+}
+
+.table-body td {
+    /*padding: var(--space-4);*/
+
+    font-size: var(--font-size-base);
+    color: var(--text-table-body);
+
+    vertical-align: middle;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background: var(--bg-surface-elevated);
+}
+
+.table-row {
+    transition: background-color var(--transition-fast),
+        color var(--transition-fast);
+}
+
+.table-row-clickable {
+    cursor: pointer;
+}
+
+.table-hover .table-row:hover {
+    background: var(--text-table-body-hover);
+    cursor: pointer;
+}
+
+.table-head th,
+.table-body td {
+    padding-inline: var(--space-4);
+}
+
+.table-head th {
+    padding-block: var(--space-3);
+}
+
+.table-body td {
+    padding-block: var(--space-4);
+}
+
+.table-loading-row td {
+    padding-block: var(--space-4);
+}
+
+.table-skeleton {
+    width: 100%;
+    height: 12px;
+
+    border-radius: var(--radius-full);
+
+    background: var(--bg-surface-elevated);
+}
+
+.table-sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.table-header-content {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+/**/

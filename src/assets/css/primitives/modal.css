@@ -1,0 +1,212 @@
+/* --- Modal --- */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0 0 0 / 50%);
+    z-index: var(--z-modal-backdrop);
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-2xl);
+    overflow: hidden;
+
+    height: 70vh;
+    max-height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal Sizes */
+
+.modal-sm {
+    max-width: var(--modal-sm);
+    height: auto;
+}
+
+.modal-md {
+    max-width: var(--modal-md);
+    height: auto;
+}
+
+.modal-lg {
+    max-width: var(--modal-lg);
+}
+
+.modal-xl {
+    max-width: var(--modal-xl);
+}
+
+.modal-full {
+    width: var(--modal-fullscreen-w);
+    height: var(--modal-fullscreen-h);
+}
+
+/* -------------------------------- */
+/* Modal Header                     */
+/* -------------------------------- */
+
+.modal-header {
+    flex-shrink: 0;
+    width: 100%;
+    padding: var(--space-4) var(--space-6);
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal-header-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+}
+
+/* -------------------------------- */
+/* Modal Layout                     */
+/* -------------------------------- */
+
+.modal-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    flex: 1;
+    min-height: 0;
+}
+
+.modal-layout.has-aside {
+    grid-template-columns: 255px minmax(0, 1fr);
+}
+
+/* -------------------------------- */
+/* Aside                            */
+/* -------------------------------- */
+
+.modal-aside {
+    padding: var(--space-4);
+    height: 100%;
+    border-right: 1px solid var(--border-color);
+    background: var(--bg-base);
+
+    overflow-y: auto;
+    min-height: 0;
+}
+
+/* -------------------------------- */
+/* Content                          */
+/* -------------------------------- */
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    min-height: 0;
+}
+
+.modal-body {
+    flex: 1;
+    min-height: 0;
+
+    overflow-y: auto;
+
+    padding-right: var(--space-3);
+    padding-left: var(--space-3);
+    margin: var(--space-3);
+}
+
+/* -------------------------------- */
+/* Footer                           */
+/* -------------------------------- */
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-start;
+    background: var(--bg-base);
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    padding: var(--space-5);
+    z-index: var(--z-modal);
+}
+
+.modal-footer-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-3);
+    width: 100%;
+}
+
+/* -------------------------------- */
+/* Close                            */
+/* -------------------------------- */
+
+.modal-close {
+    position: absolute;
+    top: var(--space-6);
+    right: var(--space-6);
+}
+
+@media (max-width: 768px) {
+
+    .modal {
+        width: 95%;
+        height: 90vh;
+        max-height: 90vh;
+    }
+
+    .modal-layout.has-aside {
+        grid-template-columns: 64px minmax(0, 1fr);
+    }
+
+    .modal-aside {
+        padding: var(--space-2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    .modal-content {
+        min-width: 0;
+    }
+
+    .modal-body {
+        padding-left: var(--space-2);
+        padding-right: var(--space-2);
+        margin: var(--space-2);
+    }
+
+    .modal-footer {
+        padding: var(--space-3);
+    }
+
+    .modal-header {
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .modal-close {
+        top: var(--space-4);
+        right: var(--space-4);
+    }
+}

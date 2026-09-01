@@ -1,0 +1,6 @@
+
+.step-item {
+  text-align: center;
+  padding: var(--space-6);
+  position: relative;
+}

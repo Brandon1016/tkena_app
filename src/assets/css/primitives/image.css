@@ -1,0 +1,49 @@
+.pure-image{
+    display:block;
+    max-width:100%;
+}
+
+/* Sizes */
+
+.image-xs{
+    width:24px;
+    height:24px;
+}
+
+.image-sm{
+    width:32px;
+    height:32px;
+}
+
+.image-md{
+    width:48px;
+    height:48px;
+}
+
+.image-lg{
+    width:72px;
+    height:72px;
+}
+
+.image-xl{
+    width:120px;
+    height:120px;
+}
+
+/* Variants */
+
+.image-avatar{
+    border-radius:50%;
+}
+
+.image-rounded{
+    border-radius:var(--radius-xl);
+}
+
+.image-circle{
+    border-radius:50%;
+}
+
+.image-default{
+    border-radius:0;
+}

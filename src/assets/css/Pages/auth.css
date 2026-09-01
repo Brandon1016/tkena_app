@@ -1,0 +1,51 @@
+
+/* Auth Pages */
+.login-bg,
+.register-bg {
+  background-color: var(--bg-base);
+}
+
+.auth-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+}
+
+.auth-icon {
+  font-size: 3rem;
+  background: var(--bg-surface-elevated);
+  padding: var(--space-3);
+  border-radius: var(--radius-full);
+  display: inline-block;
+}
+
+.auth-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.login-main,
+.register-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  max-width: 450px;
+}
+
+.register-card {
+  max-width: var(--card-width-sm);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-1);
+}

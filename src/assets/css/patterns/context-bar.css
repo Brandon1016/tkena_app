@@ -1,0 +1,57 @@
+
+/* ContextBar */
+.context-bar {
+  background-color: var(--bg-base);
+  padding: var(--space-4) 0;
+  width: 100%;
+
+  z-index: var(--z-sticky);
+}
+
+.context-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.breadcrumbs-nav {
+  align-items: center;
+}
+
+.breadcrumb-list {
+  display: flex;
+  font-size: var(--font-size-sm);
+  flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.bc-link {
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+.bc-link:hover {
+  color: var(--text-primary);
+}
+
+.bc-separator {
+  margin: 0 var(--space-1);
+  opacity: 0.5;
+}
+
+.bc-current {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.page-title-heading {
+    padding-top: var(--space-2);
+}

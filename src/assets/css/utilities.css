@@ -1,0 +1,282 @@
+/* las utilities deben ser genéricas, atómicas y completas */
+/* ==========================================================================
+   Text
+   ========================================================================== */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-success {
+    color: var(--state-success);
+}
+
+.text-warning {
+    color: var(--state-warning);
+}
+
+.text-danger {
+    color: var(--state-danger);
+}
+
+.text-info {
+    color: var(--state-info);
+}
+
+/* ==========================================================================
+   Margin Top
+   ========================================================================== */
+
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-5 { margin-top: var(--space-5); }
+.mt-6 { margin-top: var(--space-6); }
+.mt-8 { margin-top: var(--space-8); }
+.mt-10 { margin-top: var(--space-10); }
+.mt-12 { margin-top: var(--space-12); }
+.mt-16 { margin-top: var(--space-16); }
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+/* ==========================================================================
+   Flex
+   ========================================================================== */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.self-center{
+    align-self:center;
+}
+
+.self-start{
+    align-self:flex-start;
+}
+
+.self-end{
+    align-self:flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: var(--space-6);
+}
+
+.form-group--horizontal {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+}
+
+.form-field-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group--horizontal .form-field-content {
+    display: flex;
+    flex-direction: column;
+    width: 220px;   /* ancho de la columna del label */
+    flex-shrink: 0;
+}
+
+.form-group--horizontal .input-wrapper {
+    flex: 1;
+}
+
+.flex-row {
+    display:flex;
+    flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+/* ==========================================================================
+   Position
+   ========================================================================== */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.gap-2 {
+  gap: var(--space-2);
+}
+
+.gap-4 {
+  gap: var(--space-4);
+}
+
+/* ==========================================================================
+   Border Radius
+   ========================================================================== */
+.rounded-sm{
+    border-radius: var(--radius-sm);
+}
+
+.rounded-md {
+  border-radius: var(--radius-md);
+}
+
+.rounded-lg {
+  border-radius: var(--radius-lg);
+}
+
+.rounded-xl{
+    border-radius: var(--radius-xl);
+}
+
+.rounded-2xl{
+    border-radius: var(--radius-2xl);
+}
+
+.rounded-full {
+    border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   Sizing
+   ========================================================================== */
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+    height:100%;
+}
+/* ==========================================================================
+   Overflow
+   ========================================================================== */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Display
+   ========================================================================== */
+
+.hidden {
+    display:none;
+}
+
+.invisible {
+    visibility:hidden;
+}
+
+.block {
+    display:block;
+}
+
+.inline-flex {
+    display:inline-flex;
+}
+
+.inline-block {
+    display:inline-block;
+}
+
+.grid {
+    display:grid;
+}
+/* ==========================================================================
+   Container
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  /*padding: 0 var(--space-4);*/
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Cursor
+   ========================================================================== */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}

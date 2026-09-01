@@ -1,0 +1,198 @@
+/*
+
+/* ==========================================================================
+aca detallamos la base de diseño del proyecto colores espacios todos los elemntos fijos que se mantienen en el proyecto
+
+--------------------------------------------------------------------------------------------------------
+*/
+
+:root {
+
+    /* ==========================================================================
+        BRAND COLOR SCALES
+        ========================================================================== */
+
+    /* Thilight Indigo — Secondary brand */
+    --indigo-900: #040a14;
+    --indigo-800: #081428;
+    --indigo-700: #0b1d3d;
+    --indigo-600: #0f2751;
+    --indigo-500: #133165;
+    --indigo-400: #425a84;
+    --indigo-300: #7183a3;
+    --indigo-200: #a1adc1;
+    --indigo-100: #d0d6e0;
+
+    /* White Smoke — Neutral grays */
+    --smoke-900: #303030;
+    --smoke-800: #616161;
+    --smoke-700: #919191;
+    --smoke-600: #c1c1c1;
+    --smoke-500: #f2f2f2;
+    --smoke-400: #f5f5f5;
+    --smoke-300: #f7f7f7;
+    --smoke-200: #fafafa;
+    --smoke-100: #ffffff;
+
+    /* Prussian Blue — Primary brand */
+    --prussian-900: #030508;
+    --prussian-800: #060911;
+    --prussian-700: #0a0e19;
+    --prussian-600: #0d1222;
+    --prussian-500: #10172a;
+    --prussian-400: #18223a;
+    --prussian-300: #334155;
+    --prussian-200: #47576d;
+    --prussian-100: #6f829e;
+
+    /* Emerald — Accent / Primary action */
+    --emerald-900: #012716;
+    --emerald-800: #034e2c;
+    --emerald-700: #127654;
+    --emerald-600: #069c58;
+    --emerald-500: #07c36e;
+    --emerald-400: #39cf8b;
+    --emerald-300: #83e1b6;
+    --emerald-200: #9ce7c5;
+    --emerald-100: #cdf3e2;
+
+    /* Danger — Error & destructive */
+    --danger-900: #471818;
+    --danger-800: #6c2525;
+    --danger-700: #922e2e;
+    --danger-600: #ba3c3c;
+    --danger-500: #e03e3e;
+    --danger-400: #ff6868;
+    --danger-300: #ff8e8e;
+    --danger-200: #f4b9b9;
+    --danger-100: #fae2e2;
+
+    /* Warning — Caution */
+    --warning-900: #332400;
+    --warning-800: #664700;
+    --warning-700: #996b00;
+    --warning-600: #b87d00;
+    --warning-500: #e59b00;
+    --warning-400: #fbbf32;
+    --warning-300: #fbce64;
+    --warning-200: #ffdb90;
+    --warning-100: #fbf0d9;
+
+    /* Success — Positive feedback */
+    --success-900: #133110;
+    --success-800: #194216;
+    --success-700: #21591e;
+    --success-600: #2d7528;
+    --success-500: #3d9b35;
+    --success-400: #64be5c;
+    --success-300: #94cf8f;
+    --success-200: #bee4bb;
+    --success-100: #e2f0e1;
+
+    /* Information */
+    --info-900: #0C2D45;
+    --info-800: #123F5C;
+    --info-700: #1A5478;
+    --info-600: #226B96;
+    --info-500: #2F8FE0;
+    --info-400: #55A6EC;
+    --info-300: #85C2F3;
+    --info-200: #B8DEF8;
+    --info-100: #E3F3FD;
+
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-14: 3.5rem;
+    --space-16: 4rem;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-medium: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Layout */
+    --container-md: 700px;
+    --container-lg: 820px;
+    --container-xl: 1200px;
+    --container-2xl: 1440px;
+
+    /* Icon Sizes */
+    --icon-size-xs: 1rem;
+    --icon-size-sm: 1.125rem;
+    --icon-size-md: 1.25rem;
+    --icon-size-lg: 1.5rem;
+    --icon-size-xl: 2.25rem;
+    --icon-size-2xl: 3rem;
+
+    /* Z-index */
+    --z-default: 1;
+    --z-dropdown: 800;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-toast: 600;
+    --z-tooltip: 700;
+
+    /* sidebar */
+    --sidebar-width: 256px;
+    --sidebar-collapsed-width: 72px;
+
+    /* table */
+    --table-min-width: 70rem;
+
+    /* button Height*/
+    --button-height-principal: 2.25rem;
+    --button-height-secundary: 2rem;
+    --button-height-terciary: 1.75rem;
+
+    /* Badge size*/
+    --badge-height-principal: 2.25rem;
+    --badge-height-secundary: 2rem;
+    --badge-height-terciary: 1.75rem;
+
+    /*  imput field */
+    --input-heigth: 2.375rem;
+    --checkbox--size: 1rem;
+
+    /* switch */
+
+    --switch-width: 2.75rem; /* 44px */
+    --switch-height: 1.5rem; /* 24px */
+
+    --switch-thumb-size: 1rem; /* 16px */
+    --switch-padding: 0.25rem; /* 4px */
+
+
+    --modal-xs: 26.25rem;
+    --modal-sm: 35rem;
+    --modal-md: 45rem;
+    --modal-lg: 60rem;
+    --modal-xl: 95rem;
+    --modal-fullscreen-w: 100vw;
+    --modal-fullscreen-h: 90vh;
+}

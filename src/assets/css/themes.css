@@ -1,0 +1,310 @@
+/* aca se coloca all lo que cambia entre el tema dark y light mode*/
+
+:root {
+
+    /* ==========================================================================
+      SEMANTIC TOKENS — LIGHT THEME
+      ========================================================================== */
+
+    /* Brand */
+    --color-primary: var(--emerald-500);
+    --color-primary-light: var(--emerald-300);
+    --color-primary-dark: var(--emerald-600);
+
+    --color-secondary: var(--indigo-500);
+    --color-secondary-light: var(--indigo-400);
+    --color-secondary-dark: var(--indigo-700);
+
+    --color-tertiary: var(--indigo-100);
+    --color-tertiary-light: var(--indigo-200);
+    --color-tertiary-dark: var(--indigo-700);
+
+    /* Backgrounds */
+    --bg-base: var(--smoke-400);
+    --bg-surface: var(--smoke-100);
+    --bg-surface-elevated: var(--smoke-300);
+    --bg-card: var(--bg-surface);
+    --bg-modal: var(--bg-surface);
+    --bg-sidebar: var(--bg-surface);
+    --bg-input: var(--bg-surface);
+    --bg-input-disabled: var(--smoke-400);
+    --bg-table-header: var(--indigo-100);
+    --text-table-body-hover: var(--smoke-500);
+
+
+    /* Text */
+    --text-primary: var(--prussian-500);
+    --text-secondary: var(--prussian-400);
+    --text-muted: var(--prussian-200);
+    --text-on-primary: var(--smoke-100);
+    --text-table-head: var(--prussian-200);
+    --text-table-body: var(--prussian-200);
+
+
+    /* Heading color — light theme */
+    /* H1 */
+    --text-h1: var(--prussian-400);
+    --text-h2: var(--prussian-400);
+    --text-h3: var(--prussian-400);
+    --text-h4: var(--prussian-400);
+    /* Paragraph color — light theme */
+    --text-p1: var(--prussian-400);
+    --text-p2: var(--prussian-400);
+    --text-p3: var(--prussian-200);
+
+    /* States */
+    --state-success: var(--success-500);
+    --state-success-bg:color-mix(in srgb, var(--success-500) 15%, transparent);
+    --state-success-border: var(--success-500);
+    --state-success-text: var(--success-500);
+    --state-success-hover-bg: var(--success-600);
+    --state-success-hover-border: var(--success-600);
+    --state-success-hover-text: var(--text-on-primary);
+
+    --state-warning: var(--warning-500);
+    --state-warning-bg: color-mix(in srgb, var(--warning-500) 15%, transparent);
+    --state-warning-border: var(--warning-500);
+    --state-warning-text: var(--warning-600);
+    --state-warning-hover-bg: var(--warning-600);
+    --state-warning-hover-border: var(--warning-600);
+    --state-warning-hover-text: var(--text-on-primary);
+
+    --state-danger: var(--danger-500);
+    --state-danger-bg:  color-mix(in srgb, var(--danger-500) 15%, transparent);
+    --state-danger-border: var(--danger-500);
+    --state-danger-text: var(--danger-500);
+    --state-danger-hover-bg: var(--danger-600);
+    --state-danger-hover-border: var(--danger-600);
+    --state-danger-hover-text: var(--text-on-primary);
+
+    --state-info: var(--info-500);
+    --state-info-bg: var(--info-500);
+    --state-info-border: var(--info-500);
+    --state-info-text: var(--text-on-primary);
+    --state-info-hover-bg: var(--info-600);
+    --state-info-hover-border: var(--info-600);
+    --state-info-hover-text: var(--text-on-primary);
+
+    --state-primary: var(--color-primary);
+    --state-primary-bg: var(--state-primary);
+    --state-primary-border: var(--state-primary);
+    --state-primary-text: var(--text-on-primary);
+    --state-primary-hover-bg: var(--color-primary-dark);
+    --state-primary-hover-border: var(--color-primary-dark);
+    --state-primary-hover-text: var(--text-on-primary);
+    --state-primary-disabled-bg: var(--color-primary-light);
+    --state-primary-disabled-border: var(--color-primary-light);
+    --state-primary-disabled-text: var(--text-on-primary);
+
+    --state-olprimary-text: var(--color-primary);
+    --state-olprimary-hover-bg: color-mix(in srgb, var(--color-primary) 15%, transparent);
+
+    --state-secondary: var(--color-primary);
+    --state-secondary-bg: var(--color-secondary);
+    --state-secondary-border: var(--color-secondary);
+    --state-secondary-text: var(--text-on-primary);
+    --state-secondary-hover-bg: var(--color-secondary-dark);
+    --state-secondary-hover-border: var(--color-secondary-dark);
+    --state-secondary-hover-text: var(--text-on-primary);
+    --state-secondary-disabled-bg: var(--indigo-200);
+    --state-secondary-disabled-border: var(--indigo-200);
+    --state-secondary-disabled-text: var(--text-on-primary);
+
+    --state-olsecondary-text: var(--color-secondary);
+    --state-olsecondary-hover-bg: var(--indigo-100);
+
+    --state-tertiary: var(--color-tertiary);
+    --state-tertiary-bg: var(--color-tertiary);
+    --state-tertiary-border: var(--color-tertiary);
+    --state-tertiary-text: var(--text-secondary);
+    --state-tertiary-hover-bg: var(--color-tertiary-light);
+    --state-tertiary-hover-border: var(--color-tertiary-light);
+    --state-tertiary-hover-text: var(--text-secondary);
+    --state-tertiary-disabled-bg: var(--color-tertiary-light);
+    --state-tertiary-disabled-border: var(--color-tertiary );
+    --state-tertiary-disabled-text: var(--text-secondary);
+
+    --focus-ring: var(--prussian-500);
+
+
+    /* Borders */
+    --border-color: var(--indigo-100);
+    --border-color-hover: var(--prussian-500);
+    --border-light: var(--smoke-300);
+    --border-strong: var(--smoke-700);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+    /* Disabled */
+    --disabled-bg: var(--smoke-500);
+    --disabled-text: var(--smoke-700);
+    --disabled-border: var(--smoke-600);
+
+    /* Overlay */
+    --overlay-bg: rgba(255, 255, 255, .95);
+    --overlay-backdrop: rgba(16, 23, 42, .45);
+
+    /* switch button colors*/
+    --switch-background :var(--smoke-400);
+    --switch-background-activated:var(--color-primary);
+    --switch-activated:var(--smoke-100);
+    --switch-deactivated:var(--indigo-100);
+    --switch-box-shadow: var(--shadow-sm);
+
+}
+
+/* ==========================================================================
+   SEMANTIC TOKENS — DARK THEME
+   ========================================================================== */
+
+[data-theme="dark"] {
+    /* Brand (same hues, same primaries) */
+    --color-primary: var(--emerald-500);
+    --color-primary-light: var(--emerald-300);
+    --color-primary-dark: var(--emerald-600);
+
+    --focus-ring: var(--smoke-100);
+
+    --color-secondary: var(--indigo-400);
+    --color-secondary-dark: var(--indigo-300);
+    --color-secondary-light: var(--indigo-600);
+
+    --color-tertiary: var(--prussian-300);
+    --color-tertiary-light: var(--prussian-200);
+    --color-tertiary-dark: var(--prussian-400);
+
+    /* Backgrounds — flip to dark Prussian base */
+    --bg-base: var(--prussian-500);
+    --bg-surface: var(--prussian-400);
+    --bg-surface-elevated: var(--prussian-300);
+    --bg-card: var(--bg-surface);
+    --bg-modal: var(--bg-surface);
+    --bg-sidebar: var(--bg-surface);
+    --bg-input: var(--bg-surface);
+    --bg-input-disabled: var(--prussian-500);
+      --bg-table-header: var(--indigo-400);
+
+    /* Text */
+    --text-primary: var(--smoke-200);
+    --text-secondary: var(--smoke-600);
+    --text-muted: var(--smoke-700);
+    --text-on-primary: var(--smoke-100);
+    --text-table-head: var(--smoke-100);
+    --text-table-body: var(--prussian-100);
+    --text-table-body-hover: var(--prussian-200);
+
+    /* States */
+    --state-success: var(--success-500);
+    --state-success-bg:color-mix(in srgb, var(--success-500) 15%, transparent);
+    --state-success-border: var(--success-500);
+    --state-success-text: var(--success-500);
+    --state-success-hover-bg: var(--success-600);
+    --state-success-hover-border: var(--success-600);
+    --state-success-hover-text: var(--text-on-primary);
+
+    --state-warning: var(--warning-500);
+    --state-warning-bg: color-mix(in srgb, var(--warning-500) 15%, transparent);
+    --state-warning-border: var(--warning-500);
+    --state-warning-text: var(--warning-600);
+    --state-warning-hover-bg: var(--warning-600);
+    --state-warning-hover-border: var(--warning-600);
+    --state-warning-hover-text: var(--text-on-primary);
+
+    --state-danger: var(--danger-500);
+    --state-danger-bg:  color-mix(in srgb, var(--danger-500) 15%, transparent);
+    --state-danger-border: var(--danger-500);
+    --state-danger-text: var(--danger-500);
+    --state-danger-hover-bg: var(--danger-600);
+    --state-danger-hover-border: var(--danger-600);
+    --state-danger-hover-text: var(--text-on-primary);
+
+    --state-info: var(--info-500);
+    --state-info-bg: var(--info-500);
+    --state-info-border: var(--info-500);
+    --state-info-text: var(--text-on-primary);
+    --state-info-hover-bg: var(--info-600);
+    --state-info-hover-border: var(--info-600);
+    --state-info-hover-text: var(--text-on-primary);
+
+    --state-primary: var(--color-primary);
+    --state-primary-bg: var(--color-primary);
+    --state-primary-border: var(--color-primary);
+    --state-primary-text: var(--text-on-primary);
+    --state-primary-hover-bg: var(--color-primary-dark);
+    --state-primary-hover-border: var(--color-primary-dark);
+    --state-primary-hover-text: var(--text-on-primary);
+    --state-primary-disabled-bg: var(--color-primary-light);
+    --state-primary-disabled-border: var(--color-primary-light);
+    --state-primary-disabled-text: var(--text-on-primary);
+
+    --state-olprimary-text: var(--color-primary);
+    --state-olprimary-hover-bg: color-mix(in srgb, var(--color-primary) 15%, transparent);
+
+    --state-secondary: var(--color-secondary);
+    --state-secondary-bg: var(--state-secondary);
+    --state-secondary-border: var(--state-secondary);
+    --state-secondary-text: var(--text-on-primary);
+    --state-secondary-hover-bg: var(--color-secondary-dark);
+    --state-secondary-hover-border: var(--color-secondary-dark);
+    --state-secondary-hover-text: var(--text-on-primary);
+    --state-secondary-disabled-bg: var(--color-secondary-light);
+    --state-secondary-disabled-border: var(--color-secondary-light);
+    --state-secondary-disabled-text: var(--text-on-primary);
+
+    --state-olsecondary-text: var(--prussian-100);
+    --state-olsecondary-hover-bg: color-mix(in srgb, var(--indigo-400) 15%, transparent);
+
+
+    --state-tertiary: var(--color-tertiary);
+    --state-tertiary-bg: var(--color-tertiary);
+    --state-tertiary-border: var(--color-tertiary);
+    --state-tertiary-text: var(--text-on-primary);
+    --state-tertiary-hover-bg: var(--color-tertiary-light);
+    --state-tertiary-hover-border: var(--color-tertiary);
+    --state-tertiary-hover-text: var(--text-on-primary);
+    --state-tertiary-disabled-bg: var(--color-tertiary);
+    --state-tertiary-disabled-border: var(--color-tertiary-dark);
+    --state-tertiary-disabled-text: var(--text-on-primary);
+
+
+    /* Borders */
+    --border-color: var(--prussian-300);
+    --border-color-hover: var(--smoke-100);
+    --border-light: var(--prussian-200);
+    --border-strong: var(--prussian-400);
+
+    /* Heading & Paragraph colors — dark theme */
+    --text-h1: var(--smoke-100);
+    --text-h3: var(--smoke-100);
+    --text-h2: var(--smoke-100);
+    --text-h4: var(--smoke-100);
+    --text-p1: var(--smoke-100);
+    --text-p2: var(--smoke-100);
+    --text-p3: var(--prussian-100);
+
+
+    /* Shadows (stronger in dark) */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+
+    /* Disabled */
+    --disabled-bg: var(--prussian-400);
+    --disabled-text: var(--prussian-100);
+    --disabled-border: var(--prussian-300);
+
+    /* Overlay*/
+    --overlay-bg: rgba(24, 34, 58, .96);
+    --overlay-backdrop: rgba(0, 0, 0, .65);
+
+    --switch-background :var(--prussian-500);
+    --switch-background-activated:var(--color-primary);
+    --switch-activated:var(--smoke-100);
+    --switch-deactivated:var(--indigo-400);
+    --switch-box-shadow: var(--shadow-sm);
+}

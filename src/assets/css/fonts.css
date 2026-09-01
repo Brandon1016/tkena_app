@@ -1,0 +1,22 @@
+/* Bricolage Grotesque — variable font (local, via @fontsource-variable) */
+@import '../../../node_modules/@fontsource-variable/bricolage-grotesque/index.css';
+
+/* Material Symbols Outlined — local icons (via material-symbols) */
+@import '../../../node_modules/material-symbols/outlined.css';
+
+:root {
+    /* ==========================================================================
+      SHARED DESIGN TOKENS (theme-agnostic)
+      ========================================================================== */
+
+    /* Typography — Font Families */
+    --font-family-base: 'Bricolage Grotesque Variable', sans-serif;
+    --font-family-heading: 'Bricolage Grotesque Variable', sans-serif;
+    --font-family-mono:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
+}

@@ -1,0 +1,35 @@
+.divider{
+
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+
+.divider-line{
+    flex:1;
+    height:1px;
+    background:var(--border-color);
+}
+
+.divider-label{
+    margin-inline:var(--space-3);
+    font-size:var(--font-size-sm);
+}
+
+.divider-vertical{
+    width:1px;
+    height:100%;
+    background:var(--border-color);
+}
+
+.divider-spacing-sm{
+    margin-block:var(--space-2);
+}
+
+.divider-spacing-md{
+    margin-block:var(--space-4);
+}
+
+.divider-spacing-lg{
+    margin-block:var(--space-6);
+}

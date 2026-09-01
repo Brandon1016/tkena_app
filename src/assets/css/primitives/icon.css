@@ -1,0 +1,49 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1;
+    color: currentColor;
+    flex-shrink: 0;
+}
+
+.icon-xs {
+    font-size: var(--icon-size-xs);   /* 12px */
+}
+
+.icon-sm {
+    font-size: var(--icon-size-sm);   /* 16px */
+}
+
+.icon-md {
+    font-size: var(--icon-size-md);   /* 20px */
+}
+
+.icon-lg {
+    font-size: var(--icon-size-lg);   /* 24px */
+}
+
+.icon-xl {
+    font-size: var(--icon-size-xl);   /* 32px */
+}
+
+.icon-2xl {
+    font-size: var(--icon-size-2xl);  /* 40px */
+}
+
+.step-icon {
+  font-size: var(--icon-size-xl);
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: var(--space-4);
+}
+

@@ -1,0 +1,195 @@
+/* ============================
+   SweetAlert2 - Design System
+   ============================ */
+
+.swal-custom-popup {
+    background: var(--bg-surface) !important;
+    color: var(--text-primary) !important;
+
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-xl) !important;
+
+    box-shadow: var(--shadow-lg) !important;
+    font-family: var(--font-family-base) !important;
+}
+
+/* Header */
+
+.swal2-title {
+    color: var(--text-primary) !important;
+    font-size: var(--font-size-xl) !important;
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+.swal2-html-container {
+    color: var(--text-secondary) !important;
+    font-size: var(--font-size-md) !important;
+    line-height: 1.6 !important;
+}
+
+/* Buttons */
+
+.swal2-actions {
+    gap: var(--space-3) !important;
+}
+
+.swal-custom-confirm,
+.swal-custom-cancel {
+    min-width: 120px;
+
+    padding: var(--space-2) var(--space-5) !important;
+
+    border-radius: var(--radius-lg) !important;
+    font-size: var(--font-size-sm) !important;
+    font-weight: var(--font-weight-medium) !important;
+
+    transition: all .2s ease;
+}
+
+.swal-custom-confirm {
+    background: var(--state-primary-bg) !important;
+    color: var(--state-primary-text) !important;
+    border: 1px solid var(--state-primary-border) !important;
+}
+
+.swal-custom-confirm:hover {
+    filter: brightness(.95);
+}
+
+.swal-custom-cancel {
+    min-width: 120px;
+    padding: var(--space-2) var(--space-5) !important;
+
+    background-color: transparent !important;
+    color: var(--state-olsecondary-text) !important;
+    border: 1px solid var(--state-secondary-border) !important;
+    box-shadow: var(--shadow-md) !important;
+
+    border-radius: var(--radius-lg) !important;
+    font-size: var(--font-size-sm) !important;
+    font-weight: var(--font-weight-medium) !important;
+
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        border-color var(--transition-fast),
+        box-shadow var(--transition-fast);
+}
+
+.swal-custom-cancel:hover {
+    background-color: var(--state-olsecondary-hover-bg) !important;
+    color: var(--color-secondary) !important;
+    border-color: var(--state-secondary-border) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.swal-custom-cancel:disabled {
+    background-color: transparent !important;
+    color: var(--color-secondary) !important;
+    border-color: var(--state-secondary-border) !important;
+    box-shadow: var(--shadow-md) !important;
+    cursor: not-allowed;
+    opacity: .3;
+}
+
+/* Inputs */
+
+.swal2-input,
+.swal2-select,
+.swal2-textarea {
+    background: var(--bg-surface) !important;
+    color: var(--text-primary) !important;
+
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-lg) !important;
+
+    box-shadow: none !important;
+}
+
+.swal2-input:focus,
+.swal2-select:focus,
+.swal2-textarea:focus {
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 0 0 3px var(--color-primary-100) !important;
+}
+
+/* Loader */
+
+.swal2-loader {
+    border-color: var(--color-primary) transparent var(--color-primary) transparent !important;
+}
+
+/* Close button */
+
+.swal2-close {
+    color: var(--text-muted) !important;
+}
+
+.swal2-close:hover {
+    color: var(--text-primary) !important;
+}
+
+/* Progress bar */
+
+.swal2-timer-progress-bar {
+    background: var(--color-primary) !important;
+}
+
+/* Toast */
+
+.swal2-toast {
+    border-radius: var(--radius-xl) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.swal2-toast .swal2-title {
+    font-size: var(--font-size-sm) !important;
+    font-weight: var(--font-weight-medium) !important;
+}
+
+/* Icons */
+
+.swal2-icon.swal2-success {
+    border-color: var(--state-success) !important;
+    color: var(--state-success) !important;
+}
+
+.swal2-icon.swal2-error {
+    border-color: var(--state-danger) !important;
+    color: var(--state-danger) !important;
+}
+
+.swal2-icon.swal2-warning {
+    border-color: var(--state-warning) !important;
+    color: var(--state-warning) !important;
+}
+
+.swal2-icon.swal2-info {
+    border-color: var(--state-info) !important;
+    color: var(--state-info) !important;
+}
+
+.swal2-icon.swal2-question {
+    border-color: var(--color-primary) !important;
+    color: var(--color-primary) !important;
+}
+
+.swal-custom-danger {
+    min-width: 120px;
+    padding: var(--space-2) var(--space-5) !important;
+    border-radius: var(--radius-lg) !important;
+
+    background: var(--state-danger) !important;
+    color: var(--state-primary-text) !important;
+    border: 1px solid var(--state-danger) !important;
+
+    font-size: var(--font-size-sm) !important;
+    font-weight: var(--font-weight-medium) !important;
+}
+
+.swal-custom-danger:hover {
+    background: var(--state-danger-hover-bg) !important;
+    color: var(--state-danger-hover-text) !important;
+    border-color: var(--state-danger-hover-border) !important;
+}

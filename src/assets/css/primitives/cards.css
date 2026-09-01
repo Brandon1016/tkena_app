@@ -1,0 +1,66 @@
+
+:root{
+    --card-width-sm: 450px;
+    --card-width-md: 600px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-surface);
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--space-8);
+
+    padding: var(--space-6);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition:
+        border-color var(--transition-fast),
+        box-shadow var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.card-clickable {
+    cursor: pointer;
+}
+
+.card-clickable:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.card-header {
+    padding-bottom: var(--space-3);
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card-footer {
+  padding-top: var(--space-2);
+  /*border-top: 1px solid var(--border-color);*/
+  margin-top: var(--space-3); /* separación opcional con el body */
+}
+
+.card-expand {
+  width: 100%;
+  /* El max-width se controla desde el style en línea */;
+}
+
+.card-fit {
+  width: fit-content;
+  /* Asegura que no se desborde del contenedor */
+  max-width: 100%;
+}
+
+/* Stat & Feature & FAQ cards (skeletal) */
+.stat-card,
+.feature-card,
+.faq-card,
+.welcome-card,
+.placeholder-widget {
+
+}

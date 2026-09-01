@@ -1,0 +1,102 @@
+:root {
+      /* Badge Sizes */
+  --badge-font-size:  var(--text-p3-size);
+  /*11px*/
+  --badge-padding-y: 4px;
+  --badge-padding-x: 12px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    /*margin: var(--space-1);*/
+
+    font: inherit;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--badge-font-size);
+    line-height: 1;
+
+    user-select: none;
+    white-space: nowrap;
+
+    border-radius: var(--radius-full);
+    border: 1px solid transparent;
+}
+
+.badge-sm {
+    height: var(--badge-height-terciary);
+    padding-inline: var(--space-4);
+    font-size: 10px;
+}
+
+.badge-md {
+    height: var(--badge-height-secundary);
+    padding-inline: var(--space-4);
+    font-size: var(--font-size-sm);
+}
+
+.badge-lg {
+    height: var(--badge-height-principal);
+    padding-inline: var(--space-4);
+    font-size: var(--font-size-sm);
+}
+
+.badge-success {
+    background: var(--state-success-bg);
+    color: var(--state-success-text);
+    border-color: var(--state-success-border);
+}
+
+.badge-success:hover {
+    background: var(--state-success-hover-bg);
+    color: var(--state-success-hover-text);
+    border-color: var(--state-success-hover-border);
+}
+
+.badge-warning {
+    background: var(--state-warning-bg);
+    color: var(--state-warning-text);
+    border-color: var(--state-warning-border);
+}
+
+.badge-warning:hover {
+    background: var(--state-warning-hover-bg);
+    color: var(--state-warning-hover-text);
+    border-color: var(--state-warning-hover-border);
+}
+
+.badge-danger {
+    background: var(--state-danger-bg);
+    color: var(--state-danger-text);
+    border-color: var(--state-danger-border);
+}
+
+.badge-danger:hover {
+    background: var(--state-danger-hover-bg);
+    color: var(--state-danger-hover-text);
+    border-color: var(--state-danger-hover-border);
+}
+
+.badge-info {
+    background: var(--state-info-bg);
+    color: var(--state-info-text);
+    border-color: var(--state-info-border);
+}
+
+.badge-info:hover {
+    background: var(--state-info-hover-bg);
+    color: var(--state-info-hover-text);
+    border-color: var(--state-info-hover-border);
+}
+
+.badge-neutral {
+    background: var(--state-tertiary-bg);
+    color: var(--state-tertiary-text);
+    border-color: var(--state-tertiary-border);
+}
+
+.badge-neutral:hover {
+    background: var(--state-tertiary-hover-bg);
+}

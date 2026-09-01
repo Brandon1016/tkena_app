@@ -1,0 +1,70 @@
+.tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: var(--space-1);
+    padding-right: var(--space-3);
+    padding-left: var(--space-3);
+
+    font: inherit;
+    font-weight: var(--font-weight-semibold);
+    white-space: nowrap;
+
+    cursor: none;
+    user-select: none;
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-2xl);
+
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        border-color var(--transition-fast),
+        box-shadow var(--transition-fast),
+        transform var(--transition-fast);
+
+    text-decoration: none;
+}
+
+.tag-full{
+    width:100%;
+}
+
+.tag-sm {
+    height: var(--space-4);
+    font-size: var(--text-p4-size);
+}
+
+.tag-md {
+    height:var(--button-height-secundary);
+    font-size: var(--text-p3-size);
+}
+
+.tag-lg {
+    height: var(--button-height-principal);
+    font-size: var(--text-p2-size);
+}
+
+
+.tag-primary {
+    background-color: color-mix(in srgb, var(--emerald-500) 15%, transparent);
+    color: var(--color-primary);
+}
+
+.tag-primary:disabled{
+    background-color: color-mix(in srgb, var(--color-primary-light) 5%, transparent);
+    color: color-mix(in srgb, var(--text-on-primary) 50%, transparent);
+    cursor: not-allowed;
+}
+
+.tag-secondary {
+    background-color: var(--state-tertiary-bg);
+    color: var(--state-tertiary-text);
+}
+
+.tag-secondary:disabled{
+    background-color: var(--state-tertiary-disabled-bg);
+    cursor: not-allowed;
+    opacity: .5
+}
