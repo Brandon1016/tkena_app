@@ -2,7 +2,7 @@ workflows:
   android-workflow:
     name: Android Workflow
     max_build_duration: 60
-    instance_type: linux_x2  # Android no necesita máquina Mac -- más barato/rápido
+    instance_type: mac_mini_m2  # única máquina disponible en el plan gratuito de Codemagic
     environment:
       android_signing:
         # "codemagic_keystore" = el "Reference name" que le pusiste al
@@ -11,6 +11,7 @@ workflows:
       vars:
         PACKAGE_NAME: "com.mrbot.tkena"  # el mismo appId de capacitor.config.json
       node: latest
+      java: 21  # el build de Capacitor/Gradle necesita Java 21, no la versión default
     scripts:
       - name: Set up local.properties
         script: |
