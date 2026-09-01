@@ -11,6 +11,7 @@ workflows:
       vars:
         PACKAGE_NAME: "com.mrbot.tkena"  # el mismo appId de capacitor.config.json
       node: latest
+      java: 21  # el build de Capacitor/Gradle necesita Java 21, no la versión default
     scripts:
       - name: Set up local.properties
         script: |
