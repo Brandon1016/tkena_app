@@ -10,6 +10,7 @@ workflows:
         - codemagic_keystore
       vars:
         PACKAGE_NAME: "com.mrbot.tkena"  # el mismo appId de capacitor.config.json
+        VITE_API_BASE: "https://api.test.tkena.com"  # Codemagic no tiene tu .env local
       node: latest
       java: 21  # el build de Capacitor/Gradle necesita Java 21, no la versión default
     scripts:
