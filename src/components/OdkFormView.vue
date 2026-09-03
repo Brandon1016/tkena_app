@@ -51,7 +51,7 @@ async function cargarFormulario() {
   try {
     const url = `${API_BASE}/forms/xform-preview?path=${encodeURIComponent(props.xformPath)}`
     const resp = await fetch(url, {
-      headers: { Accept: 'application/xml' },
+      headers: { Accept: 'application/xml', 'Accept-Language': 'es' },
     })
     if (!resp.ok) {
       throw new Error(`Error ${resp.status} al obtener el formulario`)
@@ -114,7 +114,8 @@ async function handleSubmit(payload) {
 
       const resp = await fetch(`${API_BASE}/forms/submissions`, {
         method: 'POST',
-        body, // NO fijar Content-Type manualmente: el navegador arma el boundary
+        headers: { 'Accept-Language': 'es' }, // NO fijar Content-Type manualmente: el navegador arma el boundary
+        body,
       })
 
       if (!resp.ok) {
@@ -151,6 +152,7 @@ async function handleSubmitChunked(chunks) {
     for (const chunk of chunks) {
       const resp = await fetch(`${API_BASE}/forms/submissions`, {
         method: 'POST',
+        headers: { 'Accept-Language': 'es' },
         body: chunk,
       })
       if (!resp.ok) throw new Error(`Error ${resp.status} enviando un chunk`)

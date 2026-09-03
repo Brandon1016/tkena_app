@@ -232,7 +232,7 @@ async function enviarFormulario() {
     <p v-else-if="error" class="error">{{ error }}</p>
 
     <template v-else>
-      <h1>{{ formTitle }}</h1>
+      <!--h1>{{ formTitle }}</h1-->
 
       <!-- Solo se muestra si el formulario define más de un idioma; un
            formulario sin traducciones trae un único SyntheticDefaultLanguage

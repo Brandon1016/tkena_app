@@ -11,6 +11,7 @@ import { computed, ref } from 'vue'
 
 const TOKEN_KEY = 'tkena_access_token'
 const REFRESH_TOKEN_KEY = 'tkena_refresh_token'
+const APP_LANGUAGE = 'es'
 
 const token = ref(localStorage.getItem(TOKEN_KEY))
 
@@ -37,7 +38,10 @@ export async function login(apiBase, username, password) {
 
   const resp = await fetch(`${apiBase}/auth/login`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Accept-Language': APP_LANGUAGE,
+    },
     body,
   })
 
@@ -64,6 +68,7 @@ export function logout() {
 export async function authFetch(url, options = {}) {
   const headers = new Headers(options.headers || {})
   if (token.value) headers.set('Authorization', `Bearer ${token.value}`)
+  if (!headers.has('Accept-Language')) headers.set('Accept-Language', APP_LANGUAGE)
 
   const resp = await fetch(url, { ...options, headers })
   if (resp.status === 401) clearSession()
